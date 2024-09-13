@@ -1,0 +1,38 @@
+{% extends 'home.html' %}
+{% block content1%}
+{%load static%}
+<div class='row my-2'>
+    <div class="col-4 text-center my-5 text-light">
+    <h1 class="mt-4">Stay connected</h1>
+    <h4 class="mt-4">dharanishravichandran05@gmail.com</h4>
+    <div class="social_link col-12 text-center mt-9 mt-5" >
+    <a href="https://www.linkedin.com/in/dharanish-ravichandran-6591371b0/" target="_blank"><img  src="{% static 'images/linkedin.png'%}" alt="images/linkedin.png" width="50" height='50' class="social_link ms-3"></a>
+
+<a href="https://github.com/RDharanish" target="_blank"><img  src="{% static 'images/gt.png'%}" alt="images/gt.png" width="50" height='50'class="social_link ms-3"></a>
+
+<a href="https://in.indeed.com/" target="_blank"><img  src="{% static 'images/indeed.jpeg'%}" alt="images/indeed.jpeg" width="50" height='50'class="social_link ms-3"></a>
+</div>
+    </div>
+    <div class="col-5 offset -1 mt-3">
+        <div class="container form-container">
+        <form>
+            <div class=" form-group m-3">
+              <label for="Name" >Name</label>
+              <input type="text" class="form-control" id="name">
+              
+            </div>
+            <div class="form-group m-3">
+                <label for="email" >email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="m-3 form-group">
+                <label for="phone">phone</label>
+                <input type="tel" class="form-control" id="phone">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content1 %}

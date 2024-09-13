@@ -1,0 +1,28 @@
+{% extends 'home.html' %}
+{% block content1%}
+{%load static%}
+<div class='row my-5'>
+    <div class="col-12 justigy-content-center- align-items-center">
+        <div class='circular-image-container'>
+<img class="circular-image" src=" {% static 'images/we.jpg' %}" alt="Image">
+    </div>
+
+</div>
+<div class="col-12 text-center mt-3">
+    <h4 class="title">Welcome to my digital space!</h4>
+    <div class="name">
+    <h1>DHARANISH</h1>
+    <h3>Full Stack Developer</h3>
+</div> 
+</div>
+<div class="social_link col-12 text-center mt-9">
+
+<a href="https://www.linkedin.com/in/dharanish-ravichandran-6591371b0/" target="_blank"><img  src="{% static 'images/linkedin.png'%}" alt="images/linkedin.png" width="50" height='50' class="social_link ms-5"></a>
+
+<a href="https://github.com/RDharanish" target="_blank"><img  src="{% static 'images/gt.png'%}" alt="images/gt.png" width="50" height='50'class="social_link ms-5"></a>
+
+<a href="https://in.indeed.com/" target="_blank"><img  src="{% static 'images/indeed.jpeg'%}" alt="images/indeed.jpeg" width="50" height='50'class="social_link ms-5"></a>
+
+</div>
+</div>
+{% endblock content1 %}
